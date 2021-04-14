@@ -1,0 +1,122 @@
+:root {
+  --primary: #6165f7;
+  --white: #ffffff;
+}
+.search-bar {
+  margin: 1rem auto;
+  width: 70%;
+}
+.search-bar input[type="text"] {
+  font-size: 1.6rem;
+}
+.city-list {
+  margin-top: 4rem;
+  height: 20rem;
+}
+.city-current {
+  /* margin-left: 3rem; */
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+.city-current__card {
+  width: 30%;
+  height: 15rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.city-name {
+  font-size: 2rem;
+  font-weight: 600;
+}
+.card-row {
+  height: 5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 1.5rem;
+}
+.card-row-more {
+  justify-content: space-between;
+  padding: 0 1.5rem;
+}
+.temp {
+  font-size: 4rem;
+  font-weight: 600;
+}
+.temp_min {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--primary);
+}
+.temp_max {
+  font-size: 2rem;
+  font-weight: 600;
+  color: rgba(248, 9, 9, 0.707);
+}
+.card-row-col {
+  height: 6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 1.5rem;
+}
+.property-container {
+  width: 100%;
+  height: 0.3rem;
+  background-color: #ccc;
+}
+.property-name {
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+.property {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.property-value {
+  background-color: rgb(255, 166, 0);
+  height: 0.3rem;
+}
+.property p {
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+.wind-meter {
+  width: 3rem;
+  height: 3rem;
+  border: 0.2em dashed rgb(255, 166, 0);
+  border-radius: 50%;
+  border-left: none;
+  border-top: none;
+  transform: rotate(-135deg);
+  position: relative;
+}
+.wind-meter > svg {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  transform: rotate(90deg);
+}
+path {
+  fill: rgb(167, 167, 167);
+}
+
+/* ERROR */
+.error-result {
+  text-align: center;
+}
+.error-result > h2 {
+  font-size: 3rem;
+  font-weight: 600;
+}

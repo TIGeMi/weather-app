@@ -1,0 +1,38 @@
+:root {
+  --primary: #6165f7;
+  --white: #ffffff;
+}
+.city-item {
+  width: 150px;
+  height: 90px;
+}
+.city-item img {
+  width: 150px;
+  height: 90px;
+}
+.city-item__card {
+  height: 90px !important;
+  border-radius: 15px !important;
+}
+.city-item h3 {
+  margin-top: 1rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+  text-align: center;
+}
+.city-item button {
+  padding: 0;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+.city-item button:hover {
+  border-bottom: 2px solid var(--primary);
+}
+.city-list__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  flex-direction: row;
+}
